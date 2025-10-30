@@ -1,0 +1,158 @@
+{
+  "plan_id": "{{ruta_id}}-{{fecha}}",
+  "ruta_id": "{{ruta_id}}", 
+  "fecha": "{{fecha}}",
+  "clientes_en_ruta": [
+    {
+      "cliente_id": "C00123",
+      "orden_visita": 1,
+      "nombre_cliente": "Tienda La Esquina",
+      "direccion": "Av. Principal 123, Centro",
+      "telefono": "+52-555-1234567",
+      "recomendaciones": [
+        {
+          "recomendacion_id": "rec-1",
+          "tipo": "ALERTA_QUIEBRE_STOCK",
+          "titulo_accion": "Reabastecer 355ml",
+          "prioridad": "alta",
+          "payload": {
+            "sku_riesgo": "355ML",
+            "dias_ultima_compra": 21,
+            "cadencia_promedio": 14,
+            "stock_estimado": 0,
+            "venta_promedio_semanal": 48
+          },
+          "feedback_config": {
+            "opciones": ["Vendió", "No traía", "Aún tenía", "Rechazó"],
+            "comentario_habilitado": true
+          }
+        },
+        {
+          "recomendacion_id": "rec-2", 
+          "tipo": "SUGERENCIA_PORTAFOLIO",
+          "titulo_accion": "Ofrecer producto complementario",
+          "prioridad": "media",
+          "payload": {
+            "sku_principal": "355ML",
+            "sku_sugerido": "CHIPS_FAMILIAR",
+            "razon_sugerencia": "Combo frecuente",
+            "margen_adicional": 15.5
+          },
+          "feedback_config": {
+            "opciones": ["Aceptó", "Rechazó", "Ya tenía", "Considerará"],
+            "comentario_habilitado": true
+          }
+        }
+      ]
+    },
+    {
+      "cliente_id": "C00456",
+      "orden_visita": 2,
+      "nombre_cliente": "Supermercado Don Luis",
+      "direccion": "Calle Comercio 456, Norte",
+      "telefono": "+52-555-2345678",
+      "recomendaciones": [
+        {
+          "recomendacion_id": "rec-3",
+          "tipo": "OFERTA_DINAMICA",
+          "titulo_accion": "Promoción especial bebidas",
+          "prioridad": "alta",
+          "payload": {
+            "skus_promocion": ["600ML", "1L", "2L"],
+            "descuento_porcentaje": 12.0,
+            "vigencia_dias": 7,
+            "minimo_unidades": 24
+          },
+          "feedback_config": {
+            "opciones": ["Aceptó", "Negoció", "Rechazó", "Pidió más tiempo"],
+            "comentario_habilitado": true
+          }
+        },
+        {
+          "recomendacion_id": "rec-4",
+          "tipo": "ARGUMENTO_VENTA",
+          "titulo_accion": "Destacar beneficio del producto premium",
+          "prioridad": "baja",
+          "payload": {
+            "sku_objetivo": "PREMIUM_500ML",
+            "argumento_clave": "Mayor margen y rotación",
+            "datos_soporte": {
+              "margen_diferencial": 25.3,
+              "rotacion_semanal": 12
+            }
+          },
+          "feedback_config": {
+            "opciones": ["Convenció", "Mostró interés", "Indiferente", "Rechazó"],
+            "comentario_habilitado": true
+          }
+        }
+      ]
+    },
+    {
+      "cliente_id": "C00789",
+      "orden_visita": 3,
+      "nombre_cliente": "Tienda Familiar Rosa",
+      "direccion": "Av. Independencia 789, Sur",
+      "telefono": "+52-555-3456789",
+      "recomendaciones": [
+        {
+          "recomendacion_id": "rec-5",
+          "tipo": "INICIATIVA_CONVERSION_NR",
+          "titulo_accion": "Convertir cliente no regular",
+          "prioridad": "media",
+          "payload": {
+            "dias_sin_compra": 45,
+            "ultima_compra_monto": 1250.00,
+            "incentivo_propuesto": "Descuento 8% en próxima compra",
+            "productos_historicos": ["355ML", "SNACKS_VARIOS"]
+          },
+          "feedback_config": {
+            "opciones": ["Regresará", "Interesado", "No comprometido", "Rechazó"],
+            "comentario_habilitado": true
+          }
+        },
+        {
+          "recomendacion_id": "rec-6",
+          "tipo": "PEDIDO_OPTIMO",
+          "titulo_accion": "Sugerir pedido óptimo",
+          "prioridad": "alta",
+          "payload": {
+            "skus_sugeridos": [
+              {
+                "sku": "355ML",
+                "cantidad_sugerida": 48,
+                "razon": "Reposición normal"
+              },
+              {
+                "sku": "600ML", 
+                "cantidad_sugerida": 24,
+                "razon": "Incremento demanda"
+              }
+            ],
+            "monto_total_estimado": 2840.50
+          },
+          "feedback_config": {
+            "opciones": ["Aceptó completo", "Aceptó parcial", "Modificó", "Rechazó"],
+            "comentario_habilitado": true
+          }
+        }
+      ]
+    }
+  ],
+  "resumen_ruta": {
+    "total_clientes": 3,
+    "total_recomendaciones": 6,
+    "prioridad_alta": 3,
+    "prioridad_media": 2,
+    "prioridad_baja": 1,
+    "tiempo_estimado_visitas": "4.5 horas",
+    "potencial_venta_total": 8950.75
+  },
+  "metadata": {
+    "generado_en": "{{timestamp}}",
+    "version_algoritmo": "v2.1.3",
+    "asesor_asignado": "A-77",
+    "ruta_solicitada": "{{ruta_id}}",
+    "fecha_solicitada": "{{fecha}}"
+  }
+}

@@ -1,0 +1,65 @@
+# Rust specific
+target/
+*.rs.bk
+**/*.rs.bk
+
+# Cargo lock backup
+Cargo.lock.bk
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Git
+.git/
+.gitignore
+
+# Documentation build
+docs/_build/
+
+# Testing
+coverage/
+.coverage
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+
+# Cloud deployment files (don't include these in the container)
+deploy.sh
+cloudbuild.yaml
+.gcloudignore
+
+# README and docs (not needed in runtime)
+README.md
+docs/*.md
+docs/*.docx
+
+# Docker files (not needed inside container)
+Dockerfile
+.dockerignore
+
+# Development scripts
+scripts/
+dev/

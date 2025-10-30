@@ -1,0 +1,71 @@
+{
+  "cliente_id": "{{cliente_id}}",
+  "periodo": {
+    "fecha_desde": "{{fecha_desde}}",
+    "fecha_hasta": "{{fecha_hasta}}",
+    "dias_consultados": 0
+  },
+  "informacion_cliente": {
+    "nombre": "Cliente Ejemplo",
+    "direccion": "Dirección del cliente",
+    "telefono": "+52-555-0000000",
+    "tipo_cliente": "regular",
+    "estado": "activo"
+  },
+  "historial_compras": [
+    {
+      "fecha": "2025-10-20",
+      "pedido_id": "PED-001",
+      "items": [
+        {
+          "sku": "355ML",
+          "cantidad": 24,
+          "precio_unitario": 15.50,
+          "subtotal": 372.00
+        },
+        {
+          "sku": "600ML", 
+          "cantidad": 12,
+          "precio_unitario": 22.00,
+          "subtotal": 264.00
+        }
+      ],
+      "total": 636.00,
+      "forma_pago": "credito",
+      "asesor": "A-77"
+    },
+    {
+      "fecha": "2025-10-15",
+      "pedido_id": "PED-002",
+      "items": [
+        {
+          "sku": "355ML",
+          "cantidad": 48,
+          "precio_unitario": 15.50,
+          "subtotal": 744.00
+        }
+      ],
+      "total": 744.00,
+      "forma_pago": "contado",
+      "asesor": "A-77"
+    }
+  ],
+  "resumen_periodo": {
+    "total_pedidos": 2,
+    "monto_total": 1380.00,
+    "promedio_por_pedido": 690.00,
+    "productos_mas_comprados": ["355ML", "600ML"],
+    "frecuencia_compra_dias": 5.0
+  },
+  "tendencias": {
+    "crecimiento_vs_periodo_anterior": "8.5%",
+    "productos_en_alza": ["600ML"],
+    "productos_en_baja": [],
+    "score_fidelidad": 85
+  },
+  "metadata": {
+    "generado_en": "{{timestamp}}",
+    "total_registros": 2,
+    "fuente_datos": "sistema_ventas"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "plan_id": "P015-2025-10-28",
+  "ruta_id": "P015",
+  "fecha": "2025-10-28", 
+  "clientes_en_ruta": [
+    {
+      "cliente_id": "C00567",
+      "orden_visita": 1,
+      "nombre_cliente": "Abarrotes El Buen Precio",
+      "direccion": "Calle Morelos 567, Centro",
+      "telefono": "+52-555-4567890",
+      "recomendaciones": [
+        {
+          "recomendacion_id": "rec-7",
+          "tipo": "SALUDO_CONSULTIVO",
+          "titulo_accion": "Saludo personalizado y consulta necesidades",
+          "prioridad": "alta",
+          "payload": {
+            "tipo_saludo": "Cliente frecuente",
+            "ultimo_pedido": "2025-10-21",
+            "preferencias_conocidas": ["Productos premium", "Pagos contado"],
+            "preguntas_sugeridas": [
+              "¿Cómo le fue con el producto premium la semana pasada?",
+              "¿Hay algún producto que sus clientes le están pidiendo?"
+            ]
+          },
+          "feedback_config": {
+            "opciones": ["Muy receptivo", "Cordial", "Neutral", "Distante"],
+            "comentario_habilitado": true
+          }
+        },
+        {
+          "recomendacion_id": "rec-8",
+          "tipo": "RECUPERACION_VOLUMEN",
+          "titulo_accion": "Recuperar volumen de ventas histórico",
+          "prioridad": "alta",
+          "payload": {
+            "volumen_historico_promedio": 3500.00,
+            "volumen_actual": 2100.00,
+            "diferencia_porcentaje": -40.0,
+            "productos_en_declive": ["600ML", "SNACKS_PREMIUM"],
+            "incentivos_propuestos": {
+              "descuento_volumen": "10% por compra mayor a $3000",
+              "credito_adicional": "Plazo extendido 15 días"
+            }
+          },
+          "feedback_config": {
+            "opciones": ["Aceptó incentivos", "Negoció términos", "Considerará", "No interesado"],
+            "comentario_habilitado": true
+          }
+        }
+      ]
+    },
+    {
+      "cliente_id": "C00890",
+      "orden_visita": 2,
+      "nombre_cliente": "Minisuper La Providencia",
+      "direccion": "Av. Revolución 890, Norte",
+      "telefono": "+52-555-5678901",
+      "recomendaciones": [
+        {
+          "recomendacion_id": "rec-9",
+          "tipo": "ALERTA_QUIEBRE_STOCK",
+          "titulo_accion": "Stock crítico en producto estrella",
+          "prioridad": "critica",
+          "payload": {
+            "sku_riesgo": "2L",
+            "dias_ultima_compra": 28,
+            "cadencia_promedio": 10,
+            "stock_estimado": 2,
+            "venta_promedio_semanal": 36,
+            "riesgo_perdida_venta": 1440.00
+          },
+          "feedback_config": {
+            "opciones": ["Reabastecido", "Pedido parcial", "No disponible", "Cliente rechazó"],
+            "comentario_habilitado": true
+          }
+        }
+      ]
+    }
+  ],
+  "resumen_ruta": {
+    "total_clientes": 2,
+    "total_recomendaciones": 3,
+    "prioridad_critica": 1,
+    "prioridad_alta": 2,
+    "tiempo_estimado_visitas": "3.0 horas",
+    "potencial_recuperacion_ventas": 4200.00
+  },
+  "metadata": {
+    "generado_en": "2025-10-28T11:00:00Z",
+    "version_algoritmo": "v2.1.3",
+    "asesor_asignado": "A-88",
+    "estrategia_enfoque": "Recuperación y mantenimiento"
+  }
+}

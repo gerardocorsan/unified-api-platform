@@ -1,0 +1,64 @@
+{
+  "status": "success",
+  "data": {
+    "feedbacks": [
+      {
+        "feedback_id": "fb-12345",
+        "plan_id": "P012-2025-10-22",
+        "cliente_id": "C00123",
+        "asesor_id": "A-77",
+        "recomendacion_id": "rec-1",
+        "tipo_recomendacion": "ALERTA_QUIEBRE_STOCK",
+        "resultado_seleccionado": "Vendió",
+        "comentario": "Cliente muy receptivo, compró cantidad completa",
+        "timestamp": "2025-10-28T15:33:11Z",
+        "venta_generada": 1245.50
+      },
+      {
+        "feedback_id": "fb-12346",
+        "plan_id": "P012-2025-10-22", 
+        "cliente_id": "C00456",
+        "asesor_id": "A-77",
+        "recomendacion_id": "rec-3",
+        "tipo_recomendacion": "OFERTA_DINAMICA",
+        "resultado_seleccionado": "Aceptó",
+        "comentario": "Negoció descuento adicional del 2%",
+        "timestamp": "2025-10-28T16:15:22Z",
+        "venta_generada": 2890.00
+      },
+      {
+        "feedback_id": "fb-12347",
+        "plan_id": "P011-2025-10-21",
+        "cliente_id": "C00234",
+        "asesor_id": "A-77",
+        "recomendacion_id": "rec-8",
+        "tipo_recomendacion": "RECUPERACION_VOLUMEN",
+        "resultado_seleccionado": "Rechazó",
+        "comentario": "Cliente tiene problemas de flujo de caja",
+        "timestamp": "2025-10-27T14:20:15Z",
+        "venta_generada": 0.00
+      }
+    ],
+    "resumen": {
+      "total_feedbacks": 3,
+      "tasa_aceptacion": "66.7%",
+      "venta_total_generada": 4135.50,
+      "promedio_venta_por_feedback": 1378.50,
+      "tipos_recomendacion_mas_efectivos": [
+        "OFERTA_DINAMICA",
+        "ALERTA_QUIEBRE_STOCK"
+      ]
+    },
+    "filtros_aplicados": {
+      "asesor_id": "A-77",
+      "fecha_desde": "2025-10-21",
+      "fecha_hasta": "2025-10-28"
+    }
+  },
+  "metadata": {
+    "page": 1,
+    "per_page": 10,
+    "total_pages": 1,
+    "generated_at": "2025-10-28T16:45:00Z"
+  }
+}

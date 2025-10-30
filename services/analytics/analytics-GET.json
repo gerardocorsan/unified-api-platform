@@ -1,0 +1,125 @@
+{
+  "status": "success",
+  "data": {
+    "periodo": {
+      "fecha_inicio": "2025-10-01",
+      "fecha_fin": "2025-10-28",
+      "dias_analizados": 28
+    },
+    "metricas_generales": {
+      "total_recomendaciones_generadas": 1847,
+      "total_feedbacks_recibidos": 1523,
+      "tasa_respuesta": "82.5%",
+      "venta_total_generada": 156750.80,
+      "promedio_venta_por_recomendacion": 102.95
+    },
+    "efectividad_por_tipo": [
+      {
+        "tipo": "ALERTA_QUIEBRE_STOCK",
+        "total_generadas": 456,
+        "tasa_aceptacion": "89.3%",
+        "venta_promedio": 1250.75,
+        "score_efectividad": 9.1
+      },
+      {
+        "tipo": "OFERTA_DINAMICA", 
+        "total_generadas": 234,
+        "tasa_aceptacion": "76.1%",
+        "venta_promedio": 2890.50,
+        "score_efectividad": 8.7
+      },
+      {
+        "tipo": "SUGERENCIA_PORTAFOLIO",
+        "total_generadas": 389,
+        "tasa_aceptacion": "64.8%",
+        "venta_promedio": 450.25,
+        "score_efectividad": 7.2
+      },
+      {
+        "tipo": "RECUPERACION_VOLUMEN",
+        "total_generadas": 123,
+        "tasa_aceptacion": "45.5%",
+        "venta_promedio": 3200.00,
+        "score_efectividad": 8.1
+      },
+      {
+        "tipo": "PEDIDO_OPTIMO",
+        "total_generadas": 298,
+        "tasa_aceptacion": "71.8%",
+        "venta_promedio": 1890.40,
+        "score_efectividad": 8.4
+      },
+      {
+        "tipo": "ARGUMENTO_VENTA",
+        "total_generadas": 201,
+        "tasa_aceptacion": "58.2%", 
+        "venta_promedio": 680.90,
+        "score_efectividad": 6.9
+      },
+      {
+        "tipo": "SALUDO_CONSULTIVO",
+        "total_generadas": 89,
+        "tasa_aceptacion": "92.1%",
+        "venta_promedio": 340.20,
+        "score_efectividad": 7.8
+      },
+      {
+        "tipo": "INICIATIVA_CONVERSION_NR",
+        "total_generadas": 57,
+        "tasa_aceptacion": "38.6%",
+        "venta_promedio": 1560.75,
+        "score_efectividad": 7.5
+      }
+    ],
+    "performance_asesores": [
+      {
+        "asesor_id": "A-77",
+        "nombre": "Carlos Mendoza",
+        "total_recomendaciones": 445,
+        "tasa_efectividad": "78.2%",
+        "venta_generada": 45230.60,
+        "tipo_mas_efectivo": "ALERTA_QUIEBRE_STOCK"
+      },
+      {
+        "asesor_id": "A-88", 
+        "nombre": "Ana Rodríguez",
+        "total_recomendaciones": 398,
+        "tasa_efectividad": "82.1%",
+        "venta_generada": 52890.40,
+        "tipo_mas_efectivo": "OFERTA_DINAMICA"
+      },
+      {
+        "asesor_id": "A-99",
+        "nombre": "Luis González",
+        "total_recomendaciones": 367,
+        "tasa_efectividad": "75.7%",
+        "venta_generada": 38450.20,
+        "tipo_mas_efectivo": "PEDIDO_OPTIMO"
+      }
+    ],
+    "tendencias": {
+      "mejor_dia_semana": "Martes",
+      "peor_dia_semana": "Viernes", 
+      "hora_pico_aceptacion": "10:00-12:00",
+      "productos_mas_recomendados": ["355ML", "600ML", "2L", "SNACKS_FAMILIARES"],
+      "regiones_mas_efectivas": ["Centro", "Norte", "Sur"]
+    },
+    "alertas": [
+      {
+        "tipo": "warning",
+        "mensaje": "Baja efectividad en recomendaciones tipo ARGUMENTO_VENTA",
+        "accion_sugerida": "Revisar entrenamiento de asesores"
+      },
+      {
+        "tipo": "success",
+        "mensaje": "Excelente performance en ALERTA_QUIEBRE_STOCK",
+        "accion_sugerida": "Replicar estrategia en otros tipos"
+      }
+    ]
+  },
+  "metadata": {
+    "generado_en": "2025-10-28T17:00:00Z",
+    "version_algoritmo_analytics": "v1.2.1",
+    "proxima_actualizacion": "2025-10-29T17:00:00Z"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "healthy",
+  "service": "ferguez-nba-mock-service",
+  "version": "1.0.0",
+  "timestamp": "2025-10-28T16:45:30Z",
+  "uptime": "2 days, 14 hours, 23 minutes",
+  "environment": "development",
+  "dependencies": {
+    "database": {
+      "status": "connected",
+      "response_time_ms": 12
+    },
+    "external_apis": {
+      "status": "available", 
+      "last_check": "2025-10-28T16:40:00Z"
+    },
+    "file_system": {
+      "status": "healthy",
+      "disk_usage": "45%"
+    }
+  },
+  "metrics": {
+    "requests_total": 1247,
+    "requests_last_hour": 89,
+    "avg_response_time_ms": 145,
+    "error_rate_percent": 0.8,
+    "active_connections": 3
+  },
+  "endpoints": {
+    "plan_de_ruta": {
+      "status": "operational",
+      "last_request": "2025-10-28T16:42:15Z",
+      "success_rate": "99.2%"
+    },
+    "feedback": {
+      "status": "operational", 
+      "last_request": "2025-10-28T16:43:22Z",
+      "success_rate": "98.7%"
+    }
+  },
+  "build_info": {
+    "commit_hash": "a1b2c3d4e5f6",
+    "build_date": "2025-10-26T10:30:00Z",
+    "rust_version": "1.70.0"
+  }
+}

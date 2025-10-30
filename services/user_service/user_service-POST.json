@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "message": "Usuario creado exitosamente",
+  "data": {
+    "id": 4,
+    "name": "Ana Rodríguez",
+    "email": "ana.rodriguez@example.com",
+    "role": "user",
+    "created_at": "2024-01-18T11:45:00Z",
+    "is_active": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "message": "Usuario actualizado exitosamente",
+  "data": {
+    "id": 1,
+    "name": "Juan Pérez Actualizado",
+    "email": "juan.perez.nuevo@example.com",
+    "role": "admin",
+    "created_at": "2024-01-15T10:30:00Z",
+    "updated_at": "2024-01-18T16:20:00Z",
+    "is_active": true
+  }
+}

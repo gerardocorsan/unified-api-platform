@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "Juan Pérez",
+      "email": "juan.perez@example.com",
+      "role": "admin",
+      "created_at": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "María García",
+      "email": "maria.garcia@example.com",
+      "role": "user",
+      "created_at": "2024-01-16T14:20:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Carlos López",
+      "email": "carlos.lopez@example.com",
+      "role": "user",
+      "created_at": "2024-01-17T09:15:00Z"
+    }
+  ],
+  "total": 3,
+  "page": 1,
+  "per_page": 10
+}

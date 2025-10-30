@@ -1,0 +1,20 @@
+{
+  "pattern": "/plan-de-ruta/{ruta_id}/{fecha}",
+  "method": "GET",
+  "params": {
+    "ruta_id": {
+      "param_type": "string",
+      "pattern": "^[A-Z][0-9]{2,3}$",
+      "required": true,
+      "description": "Route identifier (e.g., P012, P015)"
+    },
+    "fecha": {
+      "param_type": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "required": true,
+      "description": "Date in YYYY-MM-DD format"
+    }
+  },
+  "cache_ttl": 300,
+  "description": "Enriched route plan with ordered clients and NBA recommendations"
+}

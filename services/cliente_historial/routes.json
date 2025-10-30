@@ -1,0 +1,26 @@
+{
+  "pattern": "/cliente/{cliente_id}/historial/{fecha_desde}/{fecha_hasta}",
+  "method": "GET",
+  "params": {
+    "cliente_id": {
+      "param_type": "string",
+      "pattern": "^C[0-9]{5}$",
+      "required": true,
+      "description": "Client identifier (e.g., C00123)"
+    },
+    "fecha_desde": {
+      "param_type": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "required": true,
+      "description": "Start date in YYYY-MM-DD format"
+    },
+    "fecha_hasta": {
+      "param_type": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "required": true,
+      "description": "End date in YYYY-MM-DD format"
+    }
+  },
+  "cache_ttl": 600,
+  "description": "Client purchase history for a specific date range"
+}

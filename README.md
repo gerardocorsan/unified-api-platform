@@ -1,4 +1,4 @@
-# Mock Service - Mock Endpoint Server in Rust
+# Unified API Platform
 
 A web application developed in Rust with Actix Web that provides mock endpoints for testing and development. It allows you to serve predefined JSON responses and dynamically manage mock services.
 

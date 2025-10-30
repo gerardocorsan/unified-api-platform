@@ -1,0 +1,34 @@
+{
+  "status": "accepted",
+  "feedback_id": "fb-12345",
+  "received_at": "2025-10-28T15:33:11Z",
+  "processed": true,
+  "message": "Feedback registrado exitosamente",
+  "data": {
+    "plan_id": "P012-2025-10-22",
+    "cliente_id": "C00123", 
+    "asesor_id": "A-77",
+    "recomendacion_id": "rec-1",
+    "resultado_seleccionado": "Vendió",
+    "comentario": "Cliente muy receptivo, compró cantidad completa",
+    "timestamp_feedback": "2025-10-28T15:33:11Z",
+    "impacto_estimado": {
+      "venta_generada": 1245.50,
+      "unidades_vendidas": 48,
+      "margen_obtenido": 187.25
+    }
+  },
+  "analytics": {
+    "tipo_recomendacion": "ALERTA_QUIEBRE_STOCK",
+    "efectividad_asesor": "85%",
+    "score_recomendacion": 9.2,
+    "tiempo_respuesta_minutos": 15
+  },
+  "next_actions": [
+    {
+      "accion": "Seguimiento en próxima visita",
+      "descripcion": "Verificar satisfacción con producto reabastecido",
+      "fecha_sugerida": "2025-11-05"
+    }
+  ]
+}

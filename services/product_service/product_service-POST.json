@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "message": "Producto creado exitosamente",
+  "data": {
+    "id": 3,
+    "name": "Mouse Inalámbrico",
+    "category": "Accesorios",
+    "price": 29.99,
+    "currency": "USD",
+    "stock": 100,
+    "description": "Mouse inalámbrico ergonómico",
+    "created_at": "2024-01-18T12:00:00Z",
+    "is_active": true
+  }
+}
